@@ -1,0 +1,648 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu3eg-sbva484-1-i</Part>
+        <TopModelName>nn_inference</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>none</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.096</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>23674</Best-caseLatency>
+            <Average-caseLatency>23674</Average-caseLatency>
+            <Worst-caseLatency>23674</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.237 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.237 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.237 ms</Worst-caseRealTimeLatency>
+            <Interval-min>23675</Interval-min>
+            <Interval-max>23675</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <col>
+                <TripCount>80</TripCount>
+                <Latency>23360</Latency>
+                <AbsoluteTimeLatency>233600</AbsoluteTimeLatency>
+                <IterationLatency>292</IterationLatency>
+                <prod>
+                    <TripCount>288</TripCount>
+                    <Latency>289</Latency>
+                    <AbsoluteTimeLatency>2890</AbsoluteTimeLatency>
+                    <PipelineII>1</PipelineII>
+                    <PipelineDepth>3</PipelineDepth>
+                </prod>
+            </col>
+            <loop1>
+                <TripCount>80</TripCount>
+                <Latency>82</Latency>
+                <AbsoluteTimeLatency>820</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>4</PipelineDepth>
+            </loop1>
+            <col>
+                <TripCount>5</TripCount>
+                <Latency>220</Latency>
+                <AbsoluteTimeLatency>2200</AbsoluteTimeLatency>
+                <IterationLatency>44</IterationLatency>
+                <prod>
+                    <TripCount>40</TripCount>
+                    <Latency>41</Latency>
+                    <AbsoluteTimeLatency>410</AbsoluteTimeLatency>
+                    <PipelineII>1</PipelineII>
+                    <PipelineDepth>3</PipelineDepth>
+                </prod>
+            </col>
+            <loop1>
+                <TripCount>5</TripCount>
+                <Latency>6</Latency>
+                <AbsoluteTimeLatency>60</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>2</PipelineDepth>
+            </loop1>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>53</BRAM_18K>
+            <DSP>8</DSP>
+            <FF>554</FF>
+            <LUT>2217</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>432</BRAM_18K>
+            <DSP>360</DSP>
+            <FF>141120</FF>
+            <LUT>70560</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>nn_inference</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>nn_inference</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>nn_inference</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>nn_inference</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>nn_inference</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>nn_inference</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_return</name>
+            <Object>nn_inference</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_img_address0</name>
+            <Object>input_img</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>10</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_img_ce0</name>
+            <Object>input_img</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_img_q0</name>
+            <Object>input_img</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_img_address1</name>
+            <Object>input_img</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>10</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_img_ce1</name>
+            <Object>input_img</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_img_q1</name>
+            <Object>input_img</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>nn_inference</ModuleName>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>nn_inference</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.096</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>23674</Best-caseLatency>
+                    <Average-caseLatency>23674</Average-caseLatency>
+                    <Worst-caseLatency>23674</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.237 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.237 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.237 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>23675</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <col>
+                        <Name>col</Name>
+                        <TripCount>80</TripCount>
+                        <Latency>23360</Latency>
+                        <AbsoluteTimeLatency>0.234 ms</AbsoluteTimeLatency>
+                        <IterationLatency>292</IterationLatency>
+                        <PipelineDepth>292</PipelineDepth>
+                        <prod>
+                            <Name>prod</Name>
+                            <TripCount>288</TripCount>
+                            <Latency>289</Latency>
+                            <AbsoluteTimeLatency>2.890 us</AbsoluteTimeLatency>
+                            <PipelineII>1</PipelineII>
+                            <PipelineDepth>3</PipelineDepth>
+                        </prod>
+                    </col>
+                    <loop1>
+                        <Name>loop1</Name>
+                        <TripCount>80</TripCount>
+                        <Latency>82</Latency>
+                        <AbsoluteTimeLatency>0.820 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                    </loop1>
+                    <col>
+                        <Name>col</Name>
+                        <TripCount>5</TripCount>
+                        <Latency>220</Latency>
+                        <AbsoluteTimeLatency>2.200 us</AbsoluteTimeLatency>
+                        <IterationLatency>44</IterationLatency>
+                        <PipelineDepth>44</PipelineDepth>
+                        <prod>
+                            <Name>prod</Name>
+                            <TripCount>40</TripCount>
+                            <Latency>41</Latency>
+                            <AbsoluteTimeLatency>0.410 us</AbsoluteTimeLatency>
+                            <PipelineII>1</PipelineII>
+                            <PipelineDepth>3</PipelineDepth>
+                        </prod>
+                    </col>
+                    <loop1>
+                        <Name>loop1</Name>
+                        <TripCount>5</TripCount>
+                        <Latency>6</Latency>
+                        <AbsoluteTimeLatency>60.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                    </loop1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>53</BRAM_18K>
+                    <AVAIL_BRAM>432</AVAIL_BRAM>
+                    <UTIL_BRAM>12</UTIL_BRAM>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>360</AVAIL_DSP>
+                    <UTIL_DSP>2</UTIL_DSP>
+                    <FF>554</FF>
+                    <AVAIL_FF>141120</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>2217</LUT>
+                    <AVAIL_LUT>70560</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>nn_inference</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>nn_inference</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_start</name>
+                    <Object>nn_inference</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_done</name>
+                    <Object>nn_inference</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_idle</name>
+                    <Object>nn_inference</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ready</name>
+                    <Object>nn_inference</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return</name>
+                    <Object>nn_inference</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>input_img_address0</name>
+                    <Object>input_img</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>10</Bits>
+                    <Attribute>address</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>input_img_ce0</name>
+                    <Object>input_img</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>input_img_q0</name>
+                    <Object>input_img</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>input_img_address1</name>
+                    <Object>input_img</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>10</Bits>
+                    <Attribute>address</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>input_img_ce1</name>
+                    <Object>input_img</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>input_img_q1</name>
+                    <Object>input_img</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <Args>
+        <Arg ArgName="input_img" index="0" direction="in" srcType="ap_fixed&lt;24, 5, AP_RND, AP_WRAP, 0&gt;*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="input_img_address0" name="input_img_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="input_img_ce0" name="input_img_ce0" usage="control" direction="in"/>
+                <hwRef type="port" interface="input_img_q0" name="input_img_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="input_img_address1" name="input_img_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="input_img_ce1" name="input_img_ce1" usage="control" direction="in"/>
+                <hwRef type="port" interface="input_img_q1" name="input_img_q1" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <ReturnValue ReturnValueName="srcType">int</ReturnValue>
+    <ReturnValue ReturnValueName="srcSize">32</ReturnValue>
+    <ReturnValue ReturnValueName="hwRefs" type="port" interface="ap_return" name="ap_return" usage="data" direction="out"/>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_return" type="data" busTypeName="data" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="ap_return">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_return</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="input_img_address0" type="data" busTypeName="data" mode="master" dataWidth="10">
+            <portMaps>
+                <portMap portMapName="input_img_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_img_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input_img"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="input_img_address1" type="data" busTypeName="data" mode="master" dataWidth="10">
+            <portMaps>
+                <portMap portMapName="input_img_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_img_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input_img"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="input_img_q0" type="data" busTypeName="data" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="input_img_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_img_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input_img"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="input_img_q1" type="data" busTypeName="data" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="input_img_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_img_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input_img"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="2">Interface, Bitwidth</keys>
+                    <column name="input_img_address0">10</column>
+                    <column name="input_img_address1">10</column>
+                    <column name="input_img_q0">32</column>
+                    <column name="input_img_q1">32</column>
+                </table>
+            </item>
+            <item name="REGISTER">
+                <table>
+                    <keys size="2">Interface, Bitwidth</keys>
+                    <column name="ap_return">32</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="input_img">in, ap_fixed&lt;24 5 AP_RND AP_WRAP 0&gt;*</column>
+                    <column name="return">out, int</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="4">Argument, HW Name, HW Type, HW Usage</keys>
+                    <column name="input_img">input_img_address0, port, offset</column>
+                    <column name="input_img">input_img_ce0, port, </column>
+                    <column name="input_img">input_img_q0, port, </column>
+                    <column name="input_img">input_img_address1, port, offset</column>
+                    <column name="input_img">input_img_ce1, port, </column>
+                    <column name="input_img">input_img_q1, port, </column>
+                    <column name="return">ap_return, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

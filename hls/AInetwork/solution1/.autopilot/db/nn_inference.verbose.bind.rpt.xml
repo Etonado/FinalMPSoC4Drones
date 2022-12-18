@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'nn_inference'" level="0">
+<item name = "Date">Sun Dec 18 11:16:31 2022
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Project">AInetwork</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.096 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">23674, 23674, 0.237 ms, 0.237 ms, 23675, 23675, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- col">23360, 23360, 292, -, -, 80, no</column>
+<column name=" + prod">289, 289, 3, 1, 1, 288, yes</column>
+<column name="- loop1">82, 82, 4, 1, 1, 80, yes</column>
+<column name="- col">220, 220, 44, -, -, 5, no</column>
+<column name=" + prod">41, 41, 3, 1, 1, 40, yes</column>
+<column name="- loop1">6, 6, 2, 1, 1, 5, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

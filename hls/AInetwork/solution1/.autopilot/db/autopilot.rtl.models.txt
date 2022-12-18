@@ -1,0 +1,8 @@
+nn_inference_dcmp_64ns_64ns_1_2_no_dsp_1
+nn_inference_mul_20s_24s_44_1_1
+nn_inference_mul_21s_24s_45_1_1
+nn_inference_weights_layer1_weights_V
+nn_inference_weights_layer2_weights_V
+nn_inference_temp_output_0_V
+nn_inference_temp_output2_0_V
+nn_inference
